@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Vrstva_1" clip-path="url(#clip0_0_102)">
+<rect width="37" height="36" fill="white"/>
+<path id="Vector" d="M7.02947 14.9393V21.0565H0.715016V14.9393H7.02947Z" fill="var(--fill-0, #009AD8)" stroke="var(--stroke-0, #009AD8)" stroke-miterlimit="10"/>
+<path id="Vector_2" d="M21.6592 0.709205V6.82639H15.3447V0.709205H21.6592Z" fill="var(--fill-0, #009AD8)" stroke="var(--stroke-0, #009AD8)" stroke-miterlimit="10"/>
+<path id="Vector_3" d="M21.6592 29.1736V35.2908H15.3447V29.1736H21.6592Z" fill="var(--fill-0, #009AD8)" stroke="var(--stroke-0, #009AD8)" stroke-miterlimit="10"/>
+<path id="Vector_4" d="M36.2846 14.9393V21.0565H29.9701V14.9393H36.2846Z" fill="var(--fill-0, #009AD8)" stroke="var(--stroke-0, #009AD8)" stroke-miterlimit="10"/>
+<path id="Vector_5" d="M14.3448 22.0561V26.3784L8.15728 32.3979L3.70122 28.0629L9.87505 22.0561H14.3448ZM27.1251 22.0561L33.2979 28.062L28.8418 32.3979L22.6553 26.3784V22.0561H27.1251ZM33.2979 7.93697L27.1251 13.9438H22.6553V9.62056L28.8418 3.60103L33.2979 7.93697ZM14.3448 9.62056V13.9438H9.87505L3.70122 7.93599L8.15728 3.60103L14.3448 9.62056Z" fill="var(--fill-0, #009AD8)" stroke="var(--stroke-0, #009AD8)" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0_0_102">
+<rect width="37" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>

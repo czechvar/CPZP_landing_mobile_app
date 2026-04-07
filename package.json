@@ -1,0 +1,23 @@
+{
+  "name": "cpzp-landing-mobile-app",
+  "version": "1.0.0",
+  "description": "ČPZP Landing Page – Mobilní aplikace Zdraví v mobilu",
+  "main": "index.html",
+  "type": "module",
+  "dependencies": {
+    "swiper": "^11.1.15"
+  },
+  "devDependencies": {
+    "vite": "^6.0.6",
+    "terser": "^5.36.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["ČPZP", "zdravotní pojišťovna", "landing page", "mobilní aplikace"],
+  "author": "",
+  "license": "MIT"
+}

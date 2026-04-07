@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zdraví v mobilu – mobilní aplikace České průmyslové zdravotní pojišťovny. Vše důležité na jednom místě.">
+  <meta name="keywords" content="ČPZP, zdravotní pojišťovna, mobilní aplikace, Zdraví v mobilu, pojištěnci">
+  <title>Zdraví v mobilu – ČPZP mobilní aplikace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="./img/logo_cpzp.png" alt="Česká průmyslová zdravotní pojišťovna">
+      </a>
+      <div class="nav-tabs">
+        <a href="index.html" class="nav-tab nav-tab--active" title="Domů">
+          <svg class="nav-icon" width="37" height="36" viewBox="0 0 37 36" fill="none" aria-hidden="true">
+            <path d="M4 16.5L18.5 4L33 16.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 12.5V31H15.5V22.5H21.5V31H28.5V12.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="subpage.html" class="nav-tab">
+          <svg class="nav-icon" width="37" height="36" viewBox="0 0 37 36" fill="none" aria-hidden="true">
+            <circle cx="18.5" cy="10" r="6" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M7 30c0-6.4 5.1-11.5 11.5-11.5S30 23.6 30 30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span>Pojištěnci</span>
+        </a>
+        <a href="#" class="nav-tab">
+          <svg class="nav-icon" width="49" height="33" viewBox="0 0 49 33" fill="none" aria-hidden="true">
+            <circle cx="15" cy="9" r="5" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M2 30c0-7.2 5.8-13 13-13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="34" cy="9" r="5" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M47 30c0-7.2-5.8-13-13-13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span>Veřejnost</span>
+        </a>
+        <a href="#" class="nav-tab">
+          <svg class="nav-icon" width="25" height="32" viewBox="0 0 25 32" fill="none" aria-hidden="true">
+            <circle cx="13" cy="7" r="4.5" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M4 31c1.5-9 5-14 9-14 5.5 0 8.5 5 9.5 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <ellipse cx="18" cy="21" rx="4" ry="3.5" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+          <span>Těhotné</span>
+        </a>
+        <a href="#" class="nav-tab">
+          <svg class="nav-icon" width="33" height="33" viewBox="0 0 33 33" fill="none" aria-hidden="true">
+            <circle cx="16.5" cy="7" r="4.5" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M7 17h19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M16.5 17L12 30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M16.5 17L21 30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span>Dítě</span>
+        </a>
+      </div>
+      <a href="#" class="btn btn--blue nav-cta">Dotazy a řešení</a>
+      <button class="nav-hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu" hidden>
+      <a href="index.html" class="nav-mobile-link nav-mobile-link--active">Domů</a>
+      <a href="subpage.html" class="nav-mobile-link">Pojištěnci</a>
+      <a href="#" class="nav-mobile-link">Veřejnost</a>
+      <a href="#" class="nav-mobile-link">Těhotné</a>
+      <a href="#" class="nav-mobile-link">Dítě</a>
+      <a href="#" class="btn btn--blue">Dotazy a řešení</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="./img/hero_bg.jpg" alt="">
+    </div>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="hero-title--red">Jsem mobilní apka</span><br>
+          <span class="hero-title--white">Zdraví v mobilu</span>
+        </h1>
+        <p class="hero-desc">Díky mně už nemusíš na pobočku a vše důležité vyřešíš z pohodlí domova, online, bez starostí. Jen se mnou máš elektronickou kartičku pojištěnce neustále po ruce, držíš krok v těhotenství, zvládneš si proplatit preventivní programy, máš přehled o všech lékařských zákrocích a preventivních prohlídkách.</p>
+        <div class="btn-group">
+          <a href="https://play.google.com/store/apps/details?id=cz.cpzp.zdravivmobilu" class="btn btn--light btn--icon" target="_blank" rel="noopener noreferrer">
+            <img src="./img/icon_android.png" alt="">
+            Stáhnout pro Android
+          </a>
+          <a href="#" class="btn btn--dark btn--icon" target="_blank" rel="noopener noreferrer">
+            <img src="./img/icon_ios.png" alt="">
+            Stáhnout pro iOS
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE SECTIONS -->
+  <section class="feature-block">
+    <div class="container feature-block__inner">
+      <div class="feature-block__text">
+        <h2 class="section-title">
+          Vše důležité pro<br>
+          <span class="text-blue">naše pojištěnce</span>
+        </h2>
+        <p>V sekci Pojištěnci získáte kompletní přehled o vaší zdravotní péči. Najdete v ní vše podstatné – historii vykázané péče za 2 roky, svůj průkaz pojištěnce, seznam smluvních lékařů, možnost on-line konzultace dotazu s lékařem a také proplácení preventivních programů. Aplikace vám navíc usnadní každodenní starosti: kdykoli si otevřete vámi nahrané lékařské zprávy, pohlídáte si platby pojistného nebo budete sbírat kroky pro zdravější život v programu Krok pro zdraví.</p>
+        <a href="subpage.html" class="btn btn--outline">Prozkoumat</a>
+      </div>
+      <div class="feature-block__image">
+        <img src="./img/section_pojistenci.jpg" alt="Funkce pro pojištěnce">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-block feature-block--reverse">
+    <div class="container feature-block__inner">
+      <div class="feature-block__image">
+        <img src="./img/section_verejnost.jpg" alt="Informace pro veřejnost">
+      </div>
+      <div class="feature-block__text">
+        <h2 class="section-title">
+          Informace pro<br>
+          <span class="text-blue">širokou veřejnost</span>
+        </h2>
+        <p>V sekci Veřejnost najdete vše potřebné pro snadnou a rychlou registraci k ČPZP. Získáte přístup k aktuálním informacím, pozvánkám na zajímavé akce i možnost rychlého sjednání cestovního pojištění. Praktickými pomocníky jsou také mapa nejbližší lékařské pohotovosti, důležitá kontaktní čísla a přehled nejčastějších očkování – zkrátka vše na jednom místě.</p>
+        <a href="#" class="btn btn--outline">Prozkoumat</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-block">
+    <div class="container feature-block__inner">
+      <div class="feature-block__text">
+        <h2 class="section-title">
+          Užitečné rady pro<br>
+          <span class="text-blue">těhotné a maminky</span>
+        </h2>
+        <p>Sekci Těhotné ocení nastávající maminky, které chtějí mít přehled o všem, co je během těhotenství čeká. Najdete tu praktickou těhotenskou kalkulačku, přehled vyšetření v jednotlivých fázích těhotenství, i ilustrace vývoje miminka ve vašem rostoucím bříšku. Inspiraci nabídnou také tipy na vhodné aktivity v těhotenství a seznam věcí, které se vyplatí přibalit do porodnice.</p>
+        <a href="#" class="btn btn--outline">Prozkoumat</a>
+      </div>
+      <div class="feature-block__image">
+        <img src="./img/section_tehotne.jpg" alt="Rady pro těhotné a maminky">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-block feature-block--reverse">
+    <div class="container feature-block__inner">
+      <div class="feature-block__image">
+        <img src="./img/section_deti.jpg" alt="Funkce pro rodiče malých dětí">
+      </div>
+      <div class="feature-block__text">
+        <h2 class="section-title">
+          Skvělé funkce pro<br>
+          <span class="text-blue">rodiče malých dětí</span>
+        </h2>
+        <p>V sekci Dítě najdete užitečné informace o vývoji či velikosti miminka v různých fázích těhotenství a po porodu. Pokud stále váháte nad jménem pro své dítě, aplikace vám nabídne inspiraci. Najdete zde ale i orientační tabulku, ve které dle symptomů nemoci miminka, můžete zkusit najít příčinu obtíží.</p>
+        <a href="#" class="btn btn--outline">Prozkoumat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-card">
+        <div class="stats-grid">
+          <div class="stats-item">
+            <div class="stats-number">
+              <span class="stats-value">246 mld.</span>
+              <span class="stats-unit">kroků v roce 2025</span>
+            </div>
+            <p class="stats-desc">Nachozeno pomocí aplikace <a href="https://play.google.com/store/apps/details?id=cz.cpzp.zdravivmobilu" target="_blank" rel="noopener noreferrer">Krok pro zdraví</a>.</p>
+          </div>
+          <div class="stats-divider"></div>
+          <div class="stats-item">
+            <div class="stats-number">
+              <span class="stats-value">&gt;800 tis.</span>
+              <span class="stats-unit">uživatelů</span>
+            </div>
+            <p class="stats-desc">Děkujeme, že používáte naši aplikaci.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div class="cta-banner__deco" aria-hidden="true">
+          <img src="./img/ellipse_deco.png" alt="" class="cta-deco cta-deco--ellipse">
+          <img src="./img/vector91.png" alt="" class="cta-deco cta-deco--v91">
+          <img src="./img/vector90.png" alt="" class="cta-deco cta-deco--v90">
+          <img src="./img/vector89.png" alt="" class="cta-deco cta-deco--v89">
+        </div>
+        <h2 class="cta-banner__title">Vše důležité<br>na jednom místě</h2>
+        <div class="btn-group">
+          <a href="https://play.google.com/store/apps/details?id=cz.cpzp.zdravivmobilu" class="btn btn--light btn--icon" target="_blank" rel="noopener noreferrer">
+            <img src="./img/icon_android.png" alt="">
+            Stáhnout pro Android
+          </a>
+          <a href="#" class="btn btn--dark btn--icon" target="_blank" rel="noopener noreferrer">
+            <img src="./img/icon_ios.png" alt="">
+            Stáhnout pro iOS
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news">
+    <div class="container">
+      <h2 class="news__title">Novinky</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-card__inner">
+            <div class="news-card__meta">
+              <strong class="news-card__version">Verze 3.15.0</strong>
+              <span class="news-card__date">20. 5. 2024</span>
+            </div>
+            <p class="news-card__body">Verze pro Android a iOS vylepšuje a zpřehledňuje funkci Proplácení preventivních programů, povoluje kód banky 6363 a odstraňuje některé drobné chyby.</p>
+          </div>
+        </article>
+        <article class="news-card news-card--highlight">
+          <div class="news-card__inner">
+            <div class="news-card__meta">
+              <span class="news-card__date">4. 3. 2024</span>
+              <strong class="news-card__version">verze 3.14.5</strong>
+            </div>
+            <p class="news-card__body">Verze pro Android a iOS odstranění drobných problémů spojených s novou verzí Androidu.</p>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-card__inner">
+            <div class="news-card__meta">
+              <span class="news-card__date">11. 12. 2023</span>
+              <strong class="news-card__version">verze 3.14.3</strong>
+            </div>
+            <p class="news-card__body">Verze pro Android a iOS vylepšuje oznámení ve funkcích Krok pro zdraví a Proplácení preventivních programů.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="./img/logo_cpzp_footer.png" alt="Česká průmyslová zdravotní pojišťovna" class="footer-logo">
+      <a href="https://cpzp.cz/" class="btn btn--blue" target="_blank" rel="noopener noreferrer">Jít na web čpzp.cz</a>
+      <div class="footer-links">
+        <a href="#">Privacy policy</a>
+        <a href="mailto:info@cpzp.cz">info@cpzp.cz</a>
+      </div>
+      <p class="footer-copy">© Copyright 2025 App</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
