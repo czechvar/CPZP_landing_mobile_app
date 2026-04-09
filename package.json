@@ -13,7 +13,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && python3 optimize-images.py --source img --dest dist/img",
+    "build:noopt": "vite build",
+    "optimize": "python3 optimize-images.py --source img --dest dist/img",
     "serve": "vite preview",
     "clean": "rm -rf dist"
   },

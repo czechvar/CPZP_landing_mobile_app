@@ -20,11 +20,11 @@
         <span class="nav-logo-text">Mobilní aplikace<br><strong>Zdraví v mobilu</strong></span>
       </a>
       <div class="nav-tabs">
-        <a href="index.html" class="nav-tab" title="Domů">
+        <a href="index.html" class="nav-tab nav-tab--home" title="Domů">
           <img class="nav-icon" src="./img/svg_cpzp/home.svg" alt="" aria-hidden="true">
         </a>
         <a href="subpage.html" class="nav-tab nav-tab--active">
-          <img class="nav-icon" src="./img/svg_cpzp/pojistenci.svg" alt="" aria-hidden="true">
+          <img class="nav-icon" src="./img/svg_cpzp/pojistenci2.svg" alt="" aria-hidden="true">
           <span>Pojištěnci</span>
         </a>
         <a href="#" class="nav-tab">
@@ -65,7 +65,7 @@
       </div>
       <div class="subpage-hero__image">
 
-        <img src="./img/hero_bg.jpg" alt="Rodina pojištěnců">
+        <img src="./img/section_pojistenci.jpg" alt="Rodina pojištěnců">
       </div>
     </div>
   </section>
@@ -74,189 +74,440 @@
   <section class="subpage-content">
     <div class="container subpage-content__inner">
 
-      <!-- Left: Feature navigation grid -->
+      <!-- Left: Feature navigation grid (desktop tabs / mobile accordion triggers) -->
       <nav class="feature-grid" aria-label="Funkce aplikace">
         <ul class="feature-grid__list" role="tablist">
 
           <li class="feature-item feature-item--active" role="tab" aria-selected="true" aria-controls="panel-osobni-ucet" data-target="osobni-ucet" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Osobni_ucet.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Osobni_ucet.svg" alt=""></span>
             <span class="feature-item__label">Osobní účet</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-osobni-ucet" hidden>
+              <h2 class="feature-content__title">Osobní účet</h2>
+              <h3 class="feature-content__subtitle">Přehled výdajů a služeb</h3>
+              <div class="feature-content__body">
+                <p>Chcete vědět, kolik zaplatila pojišťovna za vaši zdravotní péči? Ukážeme vám to. A můžete se podívat i na náklady za své děti nebo třeba rodiče (pokud máte oprávnění na tyto osoby).</p>
+                <p>Ve funkci Osobní účet uvidíte přehled všech nákladů, které byly za zvolené pojištěnce uhrazeny v posledních dvou letech. Můžete si tedy snadno ověřit, jaké výkony a v jaké výši jsme hradili.</p>
+                <p>Pokud zjistíte nesrovnalosti na svém Osobním účtu, například výkony, které jste určitě nebyly provedeny, můžete odeslat reklamaci k prošetření. Označíte řádky, které nesouhlasí, doplníte popis problému, telefonický kontakt na sebe a můžete přiložit i přílohu. Po prošetření podnětu vám pošleme výsledek šetření do schránky klienta.</p>
+              </div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" aria-controls="panel-prukaz" data-target="prukaz" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Prukaz_pojistence.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Prukaz_pojistence.svg" alt=""></span>
             <span class="feature-item__label">Průkaz pojištěnce</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-prukaz" hidden>
+              <h2 class="feature-content__title">Průkaz pojištěnce</h2>
+              <h3 class="feature-content__subtitle">Váš průkaz vždy po ruce</h3>
+              <div class="feature-content__body">
+                <p>Elektronický průkaz pojištěnce máte v aplikaci Zdraví v mobilu vždy dostupný. Stačí otevřít aplikaci a průkaz zobrazit v jakékoliv situaci – u lékaře, v lékárně nebo kdekoliv jinde.</p>
+              </div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" aria-controls="panel-proplaceni" data-target="proplaceni" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Proplaceni_preventivnich_programu.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Proplaceni_preventivnich_programu.svg" alt=""></span>
             <span class="feature-item__label">Proplácení preventivních programů</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-proplaceni" hidden>
+              <h2 class="feature-content__title">Proplácení preventivních programů</h2>
+              <h3 class="feature-content__subtitle">Snadno a rychle</h3>
+              <div class="feature-content__body">
+                <p>Prostřednictvím aplikace si snadno a rychle uplatníte příspěvek z preventivních programů ČPZP. Vyfotografujte doklad, vyplňte potřebné údaje a odešlete žádost přímo z mobilu.</p>
+              </div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" aria-controls="panel-bonus" data-target="bonus" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Bonus_plus.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Bonus_plus.svg" alt=""></span>
             <span class="feature-item__label">Bonus plus</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-bonus" hidden>
+              <h2 class="feature-content__title">Bonus plus</h2>
+              <h3 class="feature-content__subtitle">Odměna za zdravý životní styl</h3>
+              <div class="feature-content__body">
+                <p>Program Bonus plus vás odmění za pravidelné preventivní prohlídky a zdravý životní styl. Sledujte své dosažené bonusy přímo v aplikaci.</p>
+              </div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="krok" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Krok_pro_zdravi.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Krok_pro_zdravi.svg" alt=""></span>
             <span class="feature-item__label">Krok pro zdraví</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-krok" hidden>
+              <h2 class="feature-content__title">Krok pro zdraví</h2>
+              <div class="feature-content__body"><p>Sledujte své kroky a buďte zdravější. Propojte krokoměr nebo chytré hodinky s aplikací a sledujte svůj pokrok.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="preventivni" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Preventivni_prohlidky.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Preventivni_prohlidky.svg" alt=""></span>
             <span class="feature-item__label">Preventivní prohlídky</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-preventivni" hidden>
+              <h2 class="feature-content__title">Preventivní prohlídky</h2>
+              <div class="feature-content__body"><p>Přehled doporučených preventivních prohlídek na jednom místě. Víte, kdy jste byli naposledy u lékaře?</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="eprepazka" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Registrace_d_E-prepazky.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Registrace_d_E-prepazky.svg" alt=""></span>
             <span class="feature-item__label">Registrace do E-přepážky</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-eprepazka" hidden>
+              <h2 class="feature-content__title">Registrace do E-přepážky</h2>
+              <div class="feature-content__body"><p>Zaregistrujte se do E-přepážky přímo z aplikace a vyřiďte vše online bez návštěvy pobočky.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="opravneni" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Prideleni_opravneni_na_dite.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Prideleni_opravneni_na_dite.svg" alt=""></span>
             <span class="feature-item__label">Přidělení oprávnění na dítě</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-opravneni" hidden>
+              <h2 class="feature-content__title">Přidělení oprávnění na dítě</h2>
+              <div class="feature-content__body"><p>Spravujte zdravotní záznamy svých dětí v aplikaci. Přidělte si oprávnění a mějte přehled o jejich péči.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="poplatky" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Poplatky.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Poplatky.svg" alt=""></span>
             <span class="feature-item__label">Poplatky</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-poplatky" hidden>
+              <h2 class="feature-content__title">Poplatky</h2>
+              <div class="feature-content__body"><p>Přehled zaplacených poplatků za zdravotní péči. Sledujte své výdaje a ověřte správnost účtování.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="porovnani" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Porovnani_vydaju.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Porovnani_vydaju.svg" alt=""></span>
             <span class="feature-item__label">Porovnání výdajů</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-porovnani" hidden>
+              <h2 class="feature-content__title">Porovnání výdajů</h2>
+              <div class="feature-content__body"><p>Porovnejte své výdaje za zdravotní péči v čase. Přehledné grafy vám ukáží trend vašich nákladů.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="lekari" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Seznam_lekaru.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Seznam_lekaru.svg" alt=""></span>
             <span class="feature-item__label">Seznam lékařů</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-lekari" hidden>
+              <h2 class="feature-content__title">Seznam lékařů</h2>
+              <div class="feature-content__body"><p>Najděte lékaře v okolí, kteří jsou smluvními partnery ČPZP. Filtrujte podle specializace nebo lokality.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="leky" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Seznam_leku.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Seznam_leku.svg" alt=""></span>
             <span class="feature-item__label">Seznam léků</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-leky" hidden>
+              <h2 class="feature-content__title">Seznam léků</h2>
+              <div class="feature-content__body"><p>Zkontrolujte, zda je váš lék hrazen pojišťovnou. Přehledný seznam léků s informacemi o úhradě.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="zpravy" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Lekarske_zpravy.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Lekarske_zpravy.svg" alt=""></span>
             <span class="feature-item__label">Lékařské zprávy</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-zpravy" hidden>
+              <h2 class="feature-content__title">Lékařské zprávy</h2>
+              <div class="feature-content__body"><p>Vaše lékařské zprávy a výsledky vyšetření na jednom místě, dostupné kdykoliv přímo z mobilu.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="adresa" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Zmena_adresy_a_kontaktnich_udaju.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Zmena_adresy_a_kontaktnich_udaju.svg" alt=""></span>
             <span class="feature-item__label">Změna adresy a kontaktních údajů</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-adresa" hidden>
+              <h2 class="feature-content__title">Změna adresy a kontaktních údajů</h2>
+              <div class="feature-content__body"><p>Aktualizujte svou adresu a kontaktní údaje přímo v aplikaci. Změna se okamžitě promítne v evidenci pojišťovny.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="ucty" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Prehled_bankovnich_uctu.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Prehled_bankovnich_uctu.svg" alt=""></span>
             <span class="feature-item__label">Přehled bankovních účtů</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-ucty" hidden>
+              <h2 class="feature-content__title">Přehled bankovních účtů</h2>
+              <div class="feature-content__body"><p>Přehled bankovních účtů vedených u pojišťovny pro výplatu přeplatků a příspěvků.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="platby-osvc" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Prijate_platby_OSVC.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Prijate_platby_OSVC.svg" alt=""></span>
             <span class="feature-item__label">Přijaté platby OSVČ</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-platby-osvc" hidden>
+              <h2 class="feature-content__title">Přijaté platby OSVČ</h2>
+              <div class="feature-content__body"><p>Přehled přijatých plateb pojistného pro osoby samostatně výdělečně činné. Zkontrolujte, zda vaše platby dorazily.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="zadost-prukaz" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Zadost_o_prukaz_pojistence.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Zadost_o_prukaz_pojistence.svg" alt=""></span>
             <span class="feature-item__label">Žádost o průkaz pojištěnce</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-zadost-prukaz" hidden>
+              <h2 class="feature-content__title">Žádost o průkaz pojištěnce</h2>
+              <div class="feature-content__body"><p>Zažádejte o nový průkaz pojištěnce přímo z aplikace. Průkaz vám pošleme poštou na vaši adresu.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="platci" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Prehled_platcu_pojistneho.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Prehled_platcu_pojistneho.svg" alt=""></span>
             <span class="feature-item__label">Přehled plátců pojistného</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-platci" hidden>
+              <h2 class="feature-content__title">Přehled plátců pojistného</h2>
+              <div class="feature-content__body"><p>Zjistěte, kdo platí vaše pojistné. Přehled aktuálních plátců – zaměstnavatel, stát nebo vy sami.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="stav" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Stav_pojistneho.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Stav_pojistneho.svg" alt=""></span>
             <span class="feature-item__label">Stav pojistného</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-stav" hidden>
+              <h2 class="feature-content__title">Stav pojistného</h2>
+              <div class="feature-content__body"><p>Zkontrolujte aktuální stav svého pojistného – zda jste v přeplatku nebo nedoplatku.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="zalohy" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Zmena_zaloh_OSVC.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Zmena_zaloh_OSVC.svg" alt=""></span>
             <span class="feature-item__label">Změna záloh OSVČ</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-zalohy" hidden>
+              <h2 class="feature-content__title">Změna záloh OSVČ</h2>
+              <div class="feature-content__body"><p>Jako OSVČ si můžete změnit výši měsíčních záloh pojistného přímo v aplikaci, bez návštěvy pobočky.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="pobyt" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Dlouhodoby_pobyt.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Dlouhodoby_pobyt.svg" alt=""></span>
             <span class="feature-item__label">Dlouhodobý pobyt</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-pobyt" hidden>
+              <h2 class="feature-content__title">Dlouhodobý pobyt</h2>
+              <div class="feature-content__body"><p>Informace o zdravotním pojištění při dlouhodobém pobytu v zahraničí. Vše potřebné snadno v aplikaci.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="desatero" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Desatero_pro_klienty.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Desatero_pro_klienty.svg" alt=""></span>
             <span class="feature-item__label">Desatero pro klienty</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-desatero" hidden>
+              <h2 class="feature-content__title">Desatero pro klienty</h2>
+              <div class="feature-content__body"><p>Desatero práv a povinností pojištěnce ČPZP. Zjistěte, na co máte nárok a co musíte dodržovat.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="dotazy" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Nejcastejsi_dotazy.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Nejcastejsi_dotazy.svg" alt=""></span>
             <span class="feature-item__label">Nejčastější dotazy</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-dotazy" hidden>
+              <h2 class="feature-content__title">Nejčastější dotazy</h2>
+              <div class="feature-content__body"><p>Odpovědi na nejčastější otázky pojištěnců. Rychle najděte, co potřebujete vědět o svém pojištění.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="dotazy-lekare" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Dotazy_na_lekare.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Dotazy_na_lekare.svg" alt=""></span>
             <span class="feature-item__label">Dotazy na lékaře</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-dotazy-lekare" hidden>
+              <h2 class="feature-content__title">Dotazy na lékaře</h2>
+              <div class="feature-content__body"><p>Pošlete dotaz přímo lékaři přes aplikaci. Rychlá komunikace bez čekání v čekárně.</p></div>
+            </div>
           </li>
 
           <li class="feature-item" role="tab" aria-selected="false" data-target="schranka" tabindex="0">
-            <span class="feature-item__icon">
-              <img src="./img/svg_cpzp/Schranka_klienta.svg" alt="">
-            </span>
+            <span class="feature-item__icon"><img src="./img/svg_cpzp/Schranka_klienta.svg" alt=""></span>
             <span class="feature-item__label">Schránka klienta</span>
+            <span class="feature-item__arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="feature-item__accordion" id="acc-schranka" hidden>
+              <h2 class="feature-content__title">Schránka klienta</h2>
+              <div class="feature-content__body"><p>Zprávy od pojišťovny, výsledky šetření a důležité informace najdete ve své schránce klienta v aplikaci.</p></div>
+            </div>
           </li>
 
         </ul>
       </nav>
 
-      <!-- Right: Content panels -->
+      <!-- Mobile content panel (full width, below dropdown selector) -->
+      <div class="mobile-feature-panel">
+        <div class="feature-content feature-content--active" id="mob-panel-osobni-ucet">
+          <h2 class="feature-content__title">Osobní účet</h2>
+          <h3 class="feature-content__subtitle">Přehled výdajů a služeb</h3>
+          <div class="feature-content__body">
+            <p>Chcete vědět, kolik zaplatila pojišťovna za vaši zdravotní péči? Ukážeme vám to. A můžete se podívat i na náklady za své děti nebo třeba rodiče (pokud máte oprávnění na tyto osoby).</p>
+            <p>Ve funkci Osobní účet uvidíte přehled všech nákladů, které byly za zvolené pojištěnce uhrazeny v posledních dvou letech. Můžete si tedy snadno ověřit, jaké výkony a v jaké výši jsme hradili.</p>
+            <p>Pokud zjistíte nesrovnalosti na svém Osobním účtu, například výkony, které jste určitě nebyly provedeny, můžete odeslat reklamaci k prošetření. Označíte řádky, které nesouhlasí, doplníte popis problému, telefonický kontakt na sebe a můžete přiložit i přílohu. Po prošetření podnětu vám pošleme výsledek šetření do schránky klienta.</p>
+          </div>
+        </div>
+        <div class="feature-content" id="mob-panel-prukaz">
+          <h2 class="feature-content__title">Průkaz pojištěnce</h2>
+          <h3 class="feature-content__subtitle">Váš průkaz vždy po ruce</h3>
+          <div class="feature-content__body"><p>Elektronický průkaz pojištěnce máte v aplikaci Zdraví v mobilu vždy dostupný. Stačí otevřít aplikaci a průkaz zobrazit v jakékoliv situaci – u lékaře, v lékárně nebo kdekoliv jinde.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-proplaceni">
+          <h2 class="feature-content__title">Proplácení preventivních programů</h2>
+          <h3 class="feature-content__subtitle">Snadno a rychle</h3>
+          <div class="feature-content__body"><p>Prostřednictvím aplikace si snadno a rychle uplatníte příspěvek z preventivních programů ČPZP. Vyfotografujte doklad, vyplňte potřebné údaje a odešlete žádost přímo z mobilu.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-bonus">
+          <h2 class="feature-content__title">Bonus plus</h2>
+          <h3 class="feature-content__subtitle">Odměna za zdravý životní styl</h3>
+          <div class="feature-content__body"><p>Program Bonus plus vás odmění za pravidelné preventivní prohlídky a zdravý životní styl. Sledujte své dosažené bonusy přímo v aplikaci.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-krok">
+          <h2 class="feature-content__title">Krok pro zdraví</h2>
+          <div class="feature-content__body"><p>Sledujte své kroky a buďte zdravější. Propojte krokoměr nebo chytré hodinky s aplikací a sledujte svůj pokrok.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-preventivni">
+          <h2 class="feature-content__title">Preventivní prohlídky</h2>
+          <div class="feature-content__body"><p>Přehled doporučených preventivních prohlídek na jednom místě. Víte, kdy jste byli naposledy u lékaře?</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-eprepazka">
+          <h2 class="feature-content__title">Registrace do E-přepážky</h2>
+          <div class="feature-content__body"><p>Zaregistrujte se do E-přepážky přímo z aplikace a vyřiďte vše online bez návštěvy pobočky.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-opravneni">
+          <h2 class="feature-content__title">Přidělení oprávnění na dítě</h2>
+          <div class="feature-content__body"><p>Spravujte zdravotní záznamy svých dětí v aplikaci. Přidělte si oprávnění a mějte přehled o jejich péči.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-poplatky">
+          <h2 class="feature-content__title">Poplatky</h2>
+          <div class="feature-content__body"><p>Přehled zaplacených poplatků za zdravotní péči. Sledujte své výdaje a ověřte správnost účtování.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-porovnani">
+          <h2 class="feature-content__title">Porovnání výdajů</h2>
+          <div class="feature-content__body"><p>Porovnejte své výdaje za zdravotní péči v čase. Přehledné grafy vám ukáží trend vašich nákladů.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-lekari">
+          <h2 class="feature-content__title">Seznam lékařů</h2>
+          <div class="feature-content__body"><p>Najděte lékaře v okolí, kteří jsou smluvními partnery ČPZP. Filtrujte podle specializace nebo lokality.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-leky">
+          <h2 class="feature-content__title">Seznam léků</h2>
+          <div class="feature-content__body"><p>Zkontrolujte, zda je váš lék hrazen pojišťovnou. Přehledný seznam léků s informacemi o úhradě.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-zpravy">
+          <h2 class="feature-content__title">Lékařské zprávy</h2>
+          <div class="feature-content__body"><p>Vaše lékařské zprávy a výsledky vyšetření na jednom místě, dostupné kdykoliv přímo z mobilu.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-adresa">
+          <h2 class="feature-content__title">Změna adresy a kontaktních údajů</h2>
+          <div class="feature-content__body"><p>Aktualizujte svou adresu a kontaktní údaje přímo v aplikaci. Změna se okamžitě promítne v evidenci pojišťovny.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-ucty">
+          <h2 class="feature-content__title">Přehled bankovních účtů</h2>
+          <div class="feature-content__body"><p>Přehled bankovních účtů vedených u pojišťovny pro výplatu přeplatků a příspěvků.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-platby-osvc">
+          <h2 class="feature-content__title">Přijaté platby OSVČ</h2>
+          <div class="feature-content__body"><p>Přehled přijatých plateb pojistného pro osoby samostatně výdělečně činné. Zkontrolujte, zda vaše platby dorazily.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-zadost-prukaz">
+          <h2 class="feature-content__title">Žádost o průkaz pojištěnce</h2>
+          <div class="feature-content__body"><p>Zažádejte o nový průkaz pojištěnce přímo z aplikace. Průkaz vám pošleme poštou na vaši adresu.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-platci">
+          <h2 class="feature-content__title">Přehled plátců pojistného</h2>
+          <div class="feature-content__body"><p>Zjistěte, kdo platí vaše pojistné. Přehled aktuálních plátců – zaměstnavatel, stát nebo vy sami.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-stav">
+          <h2 class="feature-content__title">Stav pojistného</h2>
+          <div class="feature-content__body"><p>Zkontrolujte aktuální stav svého pojistného – zda jste v přeplatku nebo nedoplatku.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-zalohy">
+          <h2 class="feature-content__title">Změna záloh OSVČ</h2>
+          <div class="feature-content__body"><p>Jako OSVČ si můžete změnit výši měsíčních záloh pojistného přímo v aplikaci, bez návštěvy pobočky.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-pobyt">
+          <h2 class="feature-content__title">Dlouhodobý pobyt</h2>
+          <div class="feature-content__body"><p>Informace o zdravotním pojištění při dlouhodobém pobytu v zahraničí. Vše potřebné snadno v aplikaci.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-desatero">
+          <h2 class="feature-content__title">Desatero pro klienty</h2>
+          <div class="feature-content__body"><p>Desatero práv a povinností pojištěnce ČPZP. Zjistěte, na co máte nárok a co musíte dodržovat.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-dotazy">
+          <h2 class="feature-content__title">Nejčastější dotazy</h2>
+          <div class="feature-content__body"><p>Odpovědi na nejčastější otázky pojištěnců. Rychle najděte, co potřebujete vědět o svém pojištění.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-dotazy-lekare">
+          <h2 class="feature-content__title">Dotazy na lékaře</h2>
+          <div class="feature-content__body"><p>Pošlete dotaz přímo lékaři přes aplikaci. Rychlá komunikace bez čekání v čekárně.</p></div>
+        </div>
+        <div class="feature-content" id="mob-panel-schranka">
+          <h2 class="feature-content__title">Schránka klienta</h2>
+          <div class="feature-content__body"><p>Zprávy od pojišťovny, výsledky šetření a důležité informace najdete ve své schránce klienta v aplikaci.</p></div>
+        </div>
+      </div><!-- /mobile-feature-panel -->
+
+      <!-- Right: Content panels (desktop only) -->
       <div class="feature-panel">
 
         <div class="feature-content feature-content--active" id="panel-osobni-ucet" role="tabpanel">
@@ -274,7 +525,6 @@
           </div>
         </div>
 
-        <!-- Default content for unimplemented panels -->
         <div class="feature-content" id="panel-prukaz" role="tabpanel">
           <h2 class="feature-content__title">Průkaz pojištěnce</h2>
           <h3 class="feature-content__subtitle">Váš průkaz vždy po ruce</h3>

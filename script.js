@@ -12,8 +12,6 @@ if (hamburger && mobileMenu) {
     hamburger.setAttribute('aria-expanded', String(!isOpen));
     mobileMenu.hidden = isOpen;
   });
-
-  // Close menu when a link inside it is clicked
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.setAttribute('aria-expanded', 'false');
@@ -22,54 +20,117 @@ if (hamburger && mobileMenu) {
   });
 }
 
-// ---- Feature tabs on subpage (Pojištěnci) -----------------
+// ---- Feature section: tabs (desktop) / dropdown (mobile) --
+const MOBILE_BP    = 1200;
+const featureGrid  = document.querySelector('.feature-grid');
 const featureItems = document.querySelectorAll('.feature-item[data-target]');
-const featureContents = document.querySelectorAll('.feature-content');
 
-if (featureItems.length > 0) {
-  featureItems.forEach(item => {
-    item.addEventListener('click', () => activateFeature(item));
+// Desktop panels
+const desktopPanels = document.querySelectorAll('.feature-panel .feature-content');
+// Mobile panels
+const mobilePanels  = document.querySelectorAll('.mobile-feature-panel .feature-content');
 
-    // Keyboard accessibility
-    item.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        activateFeature(item);
-      }
-    });
+if (!featureItems.length) {
+  // Not on subpage — nothing to do
+}
+
+// ── helpers ────────────────────────────────────────────────
+function isMobile() { return window.innerWidth <= MOBILE_BP; }
+
+function setActive(item) {
+  featureItems.forEach(el => {
+    el.classList.remove('feature-item--active');
+    el.setAttribute('aria-selected', 'false');
+  });
+  item.classList.add('feature-item--active');
+  item.setAttribute('aria-selected', 'true');
+}
+
+// ── Desktop: classic tab panel ─────────────────────────────
+function activateDesktop(item) {
+  setActive(item);
+  const panelId = `panel-${item.dataset.target}`;
+  desktopPanels.forEach(p => p.classList.remove('feature-content--active'));
+  const panel = document.getElementById(panelId);
+  if (panel) panel.classList.add('feature-content--active');
+  else if (desktopPanels[0]) desktopPanels[0].classList.add('feature-content--active');
+}
+
+// ── Mobile: dropdown selector ──────────────────────────────
+function openDropdown() {
+  featureGrid.classList.add('feature-grid--open');
+}
+
+function closeDropdown() {
+  featureGrid.classList.remove('feature-grid--open');
+}
+
+function activateMobile(item) {
+  setActive(item);
+  closeDropdown();
+
+  // Show matching mobile panel
+  const panelId = `mob-panel-${item.dataset.target}`;
+  mobilePanels.forEach(p => p.classList.remove('feature-content--active'));
+  const panel = document.getElementById(panelId);
+  if (panel) panel.classList.add('feature-content--active');
+  else if (mobilePanels[0]) mobilePanels[0].classList.add('feature-content--active');
+}
+
+// ── Event wiring ───────────────────────────────────────────
+featureItems.forEach(item => {
+  item.addEventListener('click', e => {
+    if (!isMobile()) {
+      activateDesktop(item);
+      return;
+    }
+
+    const isOpen    = featureGrid.classList.contains('feature-grid--open');
+    const isActive  = item.classList.contains('feature-item--active');
+
+    if (!isOpen) {
+      // Closed: clicking active item opens dropdown
+      openDropdown();
+    } else if (isActive) {
+      // Open: clicking active item closes dropdown
+      closeDropdown();
+    } else {
+      // Open: clicking another item selects it and closes
+      activateMobile(item);
+    }
   });
 
-  function activateFeature(item) {
-    const target = item.getAttribute('data-target');
-    const panelId = `panel-${target}`;
-
-    // Update tab states
-    featureItems.forEach(el => {
-      el.classList.remove('feature-item--active');
-      el.setAttribute('aria-selected', 'false');
-    });
-    item.classList.add('feature-item--active');
-    item.setAttribute('aria-selected', 'true');
-
-    // Show matching panel (fall back to first if no matching panel)
-    featureContents.forEach(panel => {
-      panel.classList.remove('feature-content--active');
-    });
-
-    const activePanel = document.getElementById(panelId);
-    if (activePanel) {
-      activePanel.classList.add('feature-content--active');
-    } else {
-      // No specific panel – show a generic placeholder
-      showGenericPanel(item.querySelector('.feature-item__label')?.textContent || target);
+  item.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      item.click();
     }
-  }
+  });
+});
 
-  function showGenericPanel(label) {
-    // If we don't have a specific panel, briefly flash a message in the first panel
-    const firstPanel = featureContents[0];
-    if (firstPanel) {
-      firstPanel.classList.add('feature-content--active');
-    }
+// Close dropdown when clicking outside
+document.addEventListener('click', e => {
+  if (isMobile() && featureGrid && !featureGrid.contains(e.target)) {
+    closeDropdown();
   }
+});
+
+// ── Resize: re-initialise when crossing breakpoint ─────────
+let lastMobile = isMobile();
+window.addEventListener('resize', () => {
+  const nowMobile = isMobile();
+  if (nowMobile === lastMobile) return;
+  lastMobile = nowMobile;
+  closeDropdown();
+  const first = featureItems[0];
+  if (!first) return;
+  if (nowMobile) activateMobile(first);
+  else           activateDesktop(first);
+});
+
+// ── Initial activation ─────────────────────────────────────
+if (featureItems.length) {
+  const first = featureItems[0];
+  if (isMobile()) activateMobile(first);
+  else            activateDesktop(first);
 }
