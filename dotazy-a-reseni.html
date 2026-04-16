@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dotazy a řešení – mobilní aplikace Zdraví v mobilu od ČPZP.">
+  <title>Dotazy a řešení – Zdraví v mobilu | ČPZP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="./img/logo_cpzp.png" alt="Česká průmyslová zdravotní pojišťovna">
+        <span class="nav-logo-text">Mobilní aplikace<br><strong>Zdraví v mobilu</strong></span>
+      </a>
+      <div class="nav-tabs">
+        <a href="index.html" class="nav-tab nav-tab--home" title="Domů">
+          <img class="nav-icon" src="./img/svg_cpzp/home.svg" alt="" aria-hidden="true">
+        </a>
+        <a href="subpage.html" class="nav-tab">
+          <img class="nav-icon" src="./img/svg_cpzp/pojistenci2.svg" alt="" aria-hidden="true">
+          <span>Pojištěnci</span>
+        </a>
+        <a href="#" class="nav-tab">
+          <img class="nav-icon" src="./img/svg_cpzp/verejnost.svg" alt="" aria-hidden="true">
+          <span>Veřejnost</span>
+        </a>
+        <a href="#" class="nav-tab">
+          <img class="nav-icon" src="./img/svg_cpzp/tehotne.svg" alt="" aria-hidden="true">
+          <span>Těhotné</span>
+        </a>
+        <a href="#" class="nav-tab">
+          <img class="nav-icon" src="./img/svg_cpzp/dite.svg" alt="" aria-hidden="true">
+          <span>Dítě</span>
+        </a>
+      </div>
+      <a href="dotazy-a-reseni.html" class="btn btn--blue nav-cta nav-cta--active">Dotazy a řešení</a>
+      <button class="nav-hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu" hidden>
+      <a href="index.html" class="nav-mobile-link">Domů</a>
+      <a href="subpage.html" class="nav-mobile-link">Pojištěnci</a>
+      <a href="#" class="nav-mobile-link">Veřejnost</a>
+      <a href="#" class="nav-mobile-link">Těhotné</a>
+      <a href="#" class="nav-mobile-link">Dítě</a>
+      <a href="dotazy-a-reseni.html" class="btn btn--blue">Dotazy a řešení</a>
+    </div>
+  </nav>
+
+  <!-- FAQ HERO -->
+  <section class="faq-hero">
+    <div class="container faq-hero__inner">
+      <h1 class="faq-hero__title">Dotazy a řešení</h1>
+    </div>
+  </section>
+
+  <!-- FAQ CONTENT -->
+  <section class="faq-section">
+    <div class="container faq-section__inner">
+
+      <!-- FAQ Item 1 — open by default -->
+      <div class="faq-item faq-item--open">
+        <button class="faq-item__header" aria-expanded="true">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Jak se přihlásit do aplikace</span>
+        </button>
+        <div class="faq-item__body">
+          <p>Pro přihlášení se do aplikace musíte být registrován v Elektronické přepážce ČPZP. Registraci lze provést pohodlně prostřednictvím funkce <strong>"Registrace do E-přepážky"</strong>. Po registraci, nebo pro dříve registrované uživatele platí postup:</p>
+          <ul>
+            <li>V menu <strong>Nastavení</strong> (ozubené kolečko v pravém horním rohu) zvolte <strong>"Nastavit přihlašovací údaje"</strong>.</li>
+            <li>Pokud se přihlašujete poprvé a neznáte heslo, zvolte <strong>"Potřebuji získat přihlašovací heslo"</strong>.</li>
+            <li>V zobrazeném formuláři vyplníte přihlašovací jméno a mobilní číslo, které jste do E-přepážky ČPZP registrovali. Přihlašovací jméno je obvykle rodné číslo (bez znaku lomítka) nebo Vaše e-mailová adresa. Tlačítkem "Generovat" odešlete požadavek.</li>
+            <li>Pokud souhlasí oba údaje (jsou evidovány v E-přepážce), odešleme Vám prostřednictvím SMS zprávy heslo platné pro přihlášení do mobilní aplikace.</li>
+            <li>V menu <strong>Nastavení</strong> zvolíte opět <strong>"Nastavit přihlašovací údaje"</strong> a tentokrát volbu <strong>"Znám přihlašovací heslo"</strong>.</li>
+            <li>Do formuláře vyplníte své přihlašovací jméno (stejně jako u požadavku na získání hesla) a heslo, které jste obdrželi v SMS zprávě. Tlačítkem "Přihlásit" dokončíte přihlášení.</li>
+            <li>Následně budete vyzváni k nastavení PINu, což je minimálně čtyřmístný číselný kód, kterým budou chráněny privátní funkce mobilní aplikace. Není třeba se opakovaně přihlašovat do mobilní aplikace výše popsaným způsobem. Aplikace zůstane přihlášena trvale, pouze bude požadovat při prvním použití privátní funkce zadání PINu. Pokud máte v mobilním zařízení alternativní přístupové metody, například otisk palce, bude fungovat vedle PINu i tato metoda.</li>
+            <li>V případě, kdy požadavek na zaslání hesla nebo přihlášení se do aplikace dopadnou neúspěšně, případně pokud jste se do E-přepážky registrovali v minulosti a nevzpomenete si na své přihlašovací jméno, můžete nás kontaktovat v pracovní dny, v době od 8:00 do 15:00 hodin na telefonním čísle 261 387 460, nebo na e-mailu zdravivmobilu@cpzp.cz</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Na začátku roku mi funkce Krok pro zdraví přestala načítat kroky</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Google v poslední době ruší dříve udělená oprávnění pro čtení údajů o krocích. Týká se to více aplikací, v naší aplikaci se tato skutečnost projeví nulovým počtem kroků. Ve funkci Krok pro zdraví v tomto případě stačí zvolit výběr Google účtu (ikonka vlevo nahoře). Zvolte „Změnit účet" a vyberte stejný účet, který jste používal (na který je připojen mobilní telefon). Pokud se zobrazí následně stránka s informacemi Google, je nutno celý dialog potvrdit, případně povolit oprávnění jsou-li vyžadována (dialog je v každé verzi Androidu trochu jiný). Po tomto zásahu by se měly načíst správně letošní kroky a Krok pro zdraví začne zase fungovat. Druhou možností je, že Google začne posílat systémové notifikace s opravou problému s aplikací Zdraví v mobilu. Kliknutím na notifikaci se zobrazí podobný dialog a dokončení souhlasu opět povede ke správnému načítání kroků. O načtené kroky během dočasné nedostupnosti funkce nepřijdete.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Jsem přihlášený, ale některé funkce hlásí "špatné jméno nebo heslo"</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Pokud se u vás tento problém vyskytne, doporučujeme nastavit aplikaci do režimu DEMO (v nastavení aplikace), poté si požádat o nové heslo a až vám přijde, přihlásit se jím. Zároveň upozorňujeme, že situace může nastat také potom, co jste si na webu E-přepážky změnili přihlašovací jméno na e-mailovou adresu. Pak si musíte v mobilní aplikaci vytvořit nové přihlášení s použitím e-mailu jako přihlašovacího jména.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Po aktualizaci aplikace mi zmizely nachozené kroky ve funkci Krok pro zdraví</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Funkci Krok pro zdraví musíte nejprve aktivovat. Na zařízeních Android je třeba propojit funkci s účtem telefonu a udělit souhlas se čtením stavu kroků. Poté musíte funkci nastavit na konkrétní oprávnění (rodné číslo) v nastavení funkce. Stávalo se, že klienti tyto kroky nedokončili, a protože se v takovém případě kroky nenačítají, v aktualizaci aplikace jsme pro "nenastaveného" klienta začali zobrazovat nulové údaje, aby mu bylo více zřejmé, že funkci nemá správně nastavenou. Dokončete tedy nastavení, a kroky se začnou správně načítat.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Mám nový telefon. Nepřijdu o již nachozené kroky?</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Aplikaci Zdraví v mobilu doporučujeme do nového telefonu nově nainstalovat z Obchodu Play/App Store (nekopírovat ze starého) a správně nastavit funkci Krok pro zdraví. Kroky se načtou zpětně.</p>
+          <ul>
+            <li>Nainstalujte aplikaci Zdraví v mobilu a pro nastavení zvolte „Jsem pojištěncem a mám aktivovanou E-přepážku" a následně „Potřebuji získat přihlašovací heslo".</li>
+            <li>V zobrazeném formuláři vyplníte přihlašovací jméno a mobilní číslo, které jste do E-přepážky ČPZP registrovali. Přihlašovací jméno je obvykle rodné číslo (bez znaku lomítka) nebo Vaše e-mailová adresa. Tlačítkem "Generovat" odešlete požadavek.</li>
+            <li>Pokud souhlasí oba údaje (jsou evidovány v E-přepážce), odešleme Vám prostřednictvím SMS zprávy heslo platné pro přihlášení do mobilní aplikace. Heslo přepište do aplikace do kolonky Heslo. Tlačítkem "Přihlásit" dokončíte přihlášení.</li>
+            <li>Následně budete vyzváni k nastavení PINu, což je minimálně čtyřmístný číselný kód, kterým budou chráněny privátní funkce mobilní aplikace. Pokud máte v mobilním zařízení alternativní přístupové metody, například otisk palce, bude fungovat vedle PINu i tato metoda. Tímto je instalace aplikace dokončena a následuje samotné nastavení (aktivace) funkce Krok pro zdraví.</li>
+            <li>Důležité! Funkci Krok pro zdraví musíte aktivovat. Přejděte do samotné funkce Krok pro zdraví. 1. Odsouhlasíte úvodní informace. 2. Povolíte aplikaci Zdraví v mobilu sledování fyzické aktivity (platí pro Android). 3. Přihlásíte se k účtu Google (alternativně k aplikaci Apple Zdraví). 4. Nastavíte funkci na konkrétní osobu pomocí červeného tlačítka „Nastavení funkce". 5. Vyberete osobu, pro kterou chcete funkci nastavit (sebe) a zvolíte vlevo dole „Nastavit" (POZOR! V případě, že máte v aplikaci oprávnění pro více osob, je třeba zvolit své jméno). 6. Odsouhlasíte tlačítkem „ANO" a „OK" všechna 3 upozornění. Tím je nastavení funkce Krok pro zdraví dokončeno a kroky se začnou načítat.</li>
+          </ul>
+          <p>Předpokládá se, že se jedná o stejný účet Google, jako na starém telefonu.</p>
+          <p><strong>Při přechodu mezi systémy z Androidu na iOS a naopak je postup následující:</strong></p>
+          <p>Při změně telefonu a přechodu na jiný operační systém budou v rámci nastavení funkce Krok pro zdraví přeneseny kroky pouze za ukončené měsíce. Pravidelná archivace počtu kroků je podmíněna otevřením funkce Krok pro zdraví na straně klienta. Kroky zaznamenané v aktuálně probíhajícím měsíci přeneseny nebudou vzhledem k neslučitelnosti obou operačních systémů. Změnu proto doporučujeme provést ideálně k 1. dni kalendářního měsíce.</p>
+          <p>Postup:</p>
+          <ol>
+            <li>Ideálně 1. den v měsíci otevřete v původním telefonu Krok pro zdraví – automaticky proběhne aktualizace počtu kroků.</li>
+            <li>Do nového telefonu nainstalujte aplikaci Zdraví v mobilu a nastavte funkci Krok pro zdraví.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- FAQ Item 6 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Funkce Krok pro zdraví ukazuje méně kroků, než mé hodinky</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Naše mobilní aplikace získává počet nachozených kroků z účtu Google (nebo z účtu Apple), se kterým je spojené dané mobilní zařízení. Jakým způsobem telefon kroky zaznamenává, je dáno jeho výrobcem.</p>
+          <p>Aplikace nepodporuje chytré hodinky. Propojení hodinek s naší aplikací je věcí každého uživatele a záleží na výrobci hodinek, případně jeho softwaru, zda umožňuje kroky přenášet do účtu Google (Apple). Některé modely hodinek to umožňují, jiné ne. Například uživatelé iOS a hodinek Apple Watch nemusí nic nastavovat, protože data se přenášejí na účet Apple – a tedy i do naší mobilní aplikace – automaticky.</p>
+          <p>Pro orientaci je vhodné porovnávat údaje z naší aplikace s aplikací Google Fit (Android) nebo Zdraví (iOS), které zobrazují kroky stejným způsobem a ze stejného zdroje. Nepropojené hodinky nebo krokoměry jiných výrobců mohou poskytovat zcela rozdílné údaje (pracují na jiném principu).</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 7 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Funkce Krok pro zdraví najednou ukazuje méně kroků než včera</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Naše mobilní aplikace získává počet nachozených kroků z účtu Google (nebo z účtu Apple), se kterým je spojené dané mobilní zařízení. Nic tedy nezaznamenává, neukládá ani nemaže. Na to nemá oprávnění – může pouze číst stav kroků. Pokud se tedy snížil počet nachozených kroků, pak jde o údaj z účtu telefonu. Může jít o problém na účtu Google, možná data vymazal uživatel nebo to může mít jinou příčinu. Doporučujeme zkontrolovat údaje prostřednictvím aplikace Google Fit (Android) nebo Zdraví (iOS), které zobrazují kroky stejným způsobem a ze stejného zdroje jako naše aplikace. Musíte ověřovat stav od data, kdy jste se zaregistrovali do funkce Krok pro zdraví. Tento stav by se měl shodovat s údaji v naší aplikaci.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 8 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Funguje aplikace na všech telefonech?</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>V případě iOS funguje aplikace na všech podporovaných verzích operačního systému. Pokud jde ale o Android, aplikace nemusí fungovat správně na všech telefonech. Zejména funkce, které jsou nějakým způsobem spojené s nástroji Google, jako například Krok pro zdraví, nemusí pracovat na novějších telefonech Huawei nebo levných telefonech koupených mimo oficiální distribuci v ČR (např. levné čínské mobily koupené přes web). Takové telefony mohou mít omezený přístup ke službám Google.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 9 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Zapomněl jsem PIN pro privátní funkce</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Pokud jste zapomněli PIN, doporučujeme nastavit aplikaci do režimu DEMO (v nastavení aplikace) a poté se do ní znovu přihlásit (případně si požádat o nové heslo a přihlásit se heslem, které vám zašleme). V takovém případě budete vyzváni k zadání nového PIN. Upozorňujeme, že lze nastavit také alternativní přihlášení, například podle otisku prstu nebo prostřednictvím FaceID.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 10 -->
+      <div class="faq-item">
+        <button class="faq-item__header" aria-expanded="false">
+          <span class="faq-item__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="faq-item__question">Jaké verze operačních systémů podporujete?</span>
+        </button>
+        <div class="faq-item__body" hidden>
+          <p>Mobilní aplikace Zdraví v mobilu je aktuálně dostupná pro:</p>
+          <p>Android verze 5.0 a vyšší<br>iOS verze 11.0 a vyšší</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="./img/logo_cpzp_footer.png" alt="Česká průmyslová zdravotní pojišťovna" class="footer-logo">
+      <a href="https://cpzp.cz/" class="btn btn--blue" target="_blank" rel="noopener noreferrer">Jít na web čpzp.cz</a>
+      <div class="footer-links">
+        <a href="#">Privacy policy</a>
+        <a href="mailto:info@cpzp.cz">info@cpzp.cz</a>
+      </div>
+      <p class="footer-copy">© Copyright 2025 App</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

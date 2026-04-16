@@ -9,7 +9,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        subpage: resolve(__dirname, 'subpage.html')
+        subpage: resolve(__dirname, 'subpage.html'),
+        'dotazy-a-reseni': resolve(__dirname, 'dotazy-a-reseni.html')
       },
       output: {
         // add manualChunks here if Swiper is imported in future
