@@ -134,3 +134,26 @@ if (featureItems.length) {
   if (isMobile()) activateMobile(first);
   else            activateDesktop(first);
 }
+
+// ---- FAQ accordion toggle ---------------------------------
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const header = item.querySelector('.faq-item__header');
+  const body   = item.querySelector('.faq-item__body');
+  if (!header || !body) return;
+
+  header.addEventListener('click', () => {
+    const isOpen = item.classList.contains('faq-item--open');
+
+    if (isOpen) {
+      item.classList.remove('faq-item--open');
+      header.setAttribute('aria-expanded', 'false');
+      body.hidden = true;
+    } else {
+      item.classList.add('faq-item--open');
+      header.setAttribute('aria-expanded', 'true');
+      body.hidden = false;
+    }
+  });
+});
