@@ -146,6 +146,17 @@ faqItems.forEach(item => {
   header.addEventListener('click', () => {
     const isOpen = item.classList.contains('faq-item--open');
 
+    // Close all other items first
+    faqItems.forEach(other => {
+      if (other !== item) {
+        other.classList.remove('faq-item--open');
+        const otherHeader = other.querySelector('.faq-item__header');
+        const otherBody   = other.querySelector('.faq-item__body');
+        if (otherHeader) otherHeader.setAttribute('aria-expanded', 'false');
+        if (otherBody)   otherBody.hidden = true;
+      }
+    });
+
     if (isOpen) {
       item.classList.remove('faq-item--open');
       header.setAttribute('aria-expanded', 'false');
