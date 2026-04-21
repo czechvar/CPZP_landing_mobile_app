@@ -779,6 +779,13 @@ a      { color: inherit; text-decoration: none; }
   transition: background var(--ease);
   border-radius: 12px;
 }
+.faq-item__header:focus {
+  outline: none;
+}
+.faq-item__header:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
 .faq-item__header:hover {
   background: rgba(0, 154, 216, 0.04);
 }
